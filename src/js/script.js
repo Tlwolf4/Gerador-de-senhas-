@@ -3,7 +3,7 @@ const botao = document.getElementById("gerar")
 botao.addEventListener("click", gerarSenha)
 
 function gerarSenha() {
-  const tamanho = document.getElementById("tamanho").value
+  const tamanho = parseInt(document.getElementById("tamanho").value) 
   const minusculas = document.getElementById("minusculas").checked
   const numeros = document.getElementById("numeros").checked
   const simbolos = document.getElementById("simbolos").checked
